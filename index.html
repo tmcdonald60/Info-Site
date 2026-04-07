@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of Animation</title>
+  <style>
+    :root {
+      --primary: #0a2a5e;
+      --accent: #ff6b9d;
+      --yellow: #ffd166;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--primary);
+      color: white;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: var(--primary);
+      padding: 40px 20px 20px;
+      position: relative;
+      text-align: center;
+    }
+    .pizza-character {
+      position: absolute;
+      top: 20px;
+      left: 5%;
+      width: 220px;
+      z-index: 10;
+    }
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 10px;
+      color: white;
+    }
+    .date {
+      background: var(--accent);
+      color: white;
+      padding: 10px 25px;
+      border-radius: 50px;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    /* Evolution Section */
+    .section {
+      padding: 60px 20px;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: white;
+    }
+    .evolution-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+    .early { background: #f9c74f; color: #0a2a5e; }
+    .classic { background: #ff9ec0; color: #0a2a5e; }
+    .modern { background: #c47dff; color: white; }
+
+    /* Techniques */
+    .techniques {
+      background: var(--accent);
+      color: var(--primary);
+    }
+    .techniques-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+    .techniques-list {
+      flex: 1;
+      min-width: 280px;
+    }
+    .techniques-list ul {
+      list-style: none;
+    }
+    .techniques-list li {
+      font-size: 1.25rem;
+      margin: 15px 0;
+      padding-left: 10px;
+    }
+
+    /* Timeline */
+    .timeline {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+    .timeline-item {
+      background: #ff9ec0;
+      color: var(--primary);
+      padding: 20px 15px;
+      border-radius: 12px;
+      text-align: center;
+      flex: 1;
+      min-width: 180px;
+      max-width: 220px;
+    }
+    .timeline-item strong {
+      display: block;
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+    }
+
+    /* Modern Techniques */
+    .modern-techniques {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+      align-items: center;
+    }
+    .modern-techniques img {
+      width: 100%;
+      max-width: 340px;
+      border-radius: 16px;
+    }
+
+    /* Next Steps */
+    .next-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    .step-card {
+      background: #ff9ec0;
+      color: var(--primary);
+      padding: 25px 20px;
+      border-radius: 16px;
+      text-align: center;
+    }
+    .step-card.yellow {
+      background: var(--yellow);
+    }
+    .step-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+    }
+    .step-card ul {
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .pizza-character { width: 160px; top: 10px; }
+      h1 { font-size: 2.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container" style="position: relative;">
+      <img src="https://i.imgur.com/So4WA.png" alt="Pizza Animation Character" class="pizza-character">
+      <h1>The Evolution of Animation</h1>
+      <div class="date">March 31, 2026</div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- Evolution of Animation -->
+    <div class="section">
+      <h2>THE EVOLUTION OF ANIMATION</h2>
+      <div class="evolution-grid">
+        <div class="card early">
+          <img src="https://picsum.photos/id/1015/600/300" alt="Phenakistoscope">
+          <div class="card-content">
+            <h3>Early Animation</h3>
+            <p>The phenakistoscope was one of the earliest devices for creating animation.</p>
+          </div>
+        </div>
+        <div class="card classic">
+          <img src="https://picsum.photos/id/201/600/300" alt="Mickey Mouse">
+          <div class="card-content">
+            <h3>Classic Animation</h3>
+            <p>Hand-drawn animation brought characters to life on the big screen.</p>
+          </div>
+        </div>
+        <div class="card modern">
+          <img src="https://picsum.photos/id/1018/600/300" alt="Modern CGI">
+          <div class="card-content">
+            <h3>Modern Animation</h3>
+            <p>CGI revolutionized storytelling with its lifelike visuals and immersive worlds.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Techniques -->
+    <div class="section techniques">
+      <h2>TECHNIQUES</h2>
+      <div class="techniques-content">
+        <div class="techniques-list">
+          <ul>
+            <li>• Stop Motion</li>
+            <li>• Rotoscoping</li>
+            <li>• 2D Hand-drawn Animation</li>
+          </ul>
+        </div>
+        <img src="https://picsum.photos/id/201/700/420" alt="Artist drawing animation" style="max-width: 520px; border-radius: 16px;">
+      </div>
+    </div>
+
+    <!-- Timeline -->
+    <div class="section">
+      <h2>TIMELINE</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <strong>BEGINNINGS</strong>
+          Early animation
+        </div>
+        <div class="timeline-item">
+          <strong>DEVELOPMENT</strong>
+          Silent films
+        </div>
+        <div class="timeline-item">
+          <strong>INNOVATION</strong>
+          Cartoon shorts
+        </div>
+        <div class="timeline-item">
+          <strong>EXPANSION</strong>
+          Feature films
+        </div>
+        <div class="timeline-item">
+          <strong>MODERNIZATION</strong>
+          Digital animation
+        </div>
+      </div>
+    </div>
+
+    <!-- Modern Animation Techniques -->
+    <div class="section">
+      <h2>MODERN ANIMATION TECHNIQUES</h2>
+      <div class="modern-techniques">
+        <img src="https://picsum.photos/id/669/400/300" alt="Gollum">
+        <img src="https://picsum.photos/id/201/400/300" alt="Motion Capture">
+        <div>
+          <ul style="font-size: 1.2rem; margin-top: 20px;">
+            <li>• 3D Animation techniques</li>
+            <li>• Motion Capture technology</li>
+            <li>• Virtual Reality experiences</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Steps -->
+    <div class="section">
+      <h2>NEXT STEPS</h2>
+      <div class="next-steps">
+        <div class="step-card">
+          <h3>Dive into Classics</h3>
+          <ul>
+            <li>• Watch classic films</li>
+            <li>• Discover animation origins</li>
+          </ul>
+        </div>
+        <div class="step-card yellow">
+          <h3>Master Animation Skills</h3>
+          <ul>
+            <li>• Study animation styles</li>
+            <li>• Analyze famous works</li>
+          </ul>
+        </div>
+        <div class="step-card">
+          <h3>Engage with Creators</h3>
+          <ul>
+            <li>• Share your art</li>
+            <li>• Connect with experts</li>
+          </ul>
+        </div>
+        <div class="step-card">
+          <h3>Explore Animation History</h3>
+          <ul>
+            <li>• Watch classic films</li>
+            <li>• Discover animation origins</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    Made with ❤️ for animation lovers | The Evolution of Animation • 2026
+  </footer>
+
+</body>
+</html>
